@@ -53,7 +53,7 @@
         data-chapter-title="第二节 微信端标签替换"
         data-filepath="chapter1/section2.md"
         data-basepath=".."
-        data-revision="Fri Dec 11 2015 18:04:07 GMT+0800 (中国标准时间)"
+        data-revision="Sat Dec 12 2015 18:14:26 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -323,6 +323,19 @@
 <li>&#x5728;&#x5185;&#x8054;CSS&#x4E2D;&#x6DFB;&#x52A0; <code>!important</code></li>
 <li>&#x66FF;&#x6362;<code>.rich_media_content p</code> <code>img</code> <code>body</code> <code>html</code> &#x6837;&#x5F0F;</li>
 <li>&#x5728;JS&#x4E2D;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><p><code>.rich_media_content p</code> css&#x66FF;&#x6362;&#xFF1A;</p>
+<pre><code> .rich_media_content p {
+     clear: both;
+     min-height: 1em;
+     white-space: normal;// &#x6D4F;&#x89C8;&#x5668;&#x7A7A;&#x767D;&#x5FFD;&#x7565;(&#x5F85;&#x5B9A;)
+ }  
+</code></pre></li>
+<li><p>&#x6D4B;&#x8BD5;&#x95EE;&#x9898;&#xFF1A;</p>
+<ul>
+<li><code>&lt;video&gt;</code>&#x89C6;&#x9891;&#x6807;&#x7B7E;&#x5728;&#x5FAE;&#x4FE1;&#x4E2D;&#xFF0C;Android&#x624B;&#x673A;&#x521A;&#x8FDB;&#x5165;&#x65F6;&#x662F;&#x89C6;&#x9891;&#x4F4D;&#x7F6E;&#x663E;&#x793A;&#x662F;&#x7070;&#x8272;&#xFF0C;&#x70B9;&#x51FB;&#x4E00;&#x4E0B;&#x624D;&#x53EF;&#x4EE5;&#x64AD;&#x653E;&#x3002;iPhone6 &#x4E0D;&#x663E;&#x793A;&#x89C6;&#x9891;&#x3002;</li>
+<li><code>&lt;iframe&gt;</code> &#x89C6;&#x9891;&#x6807;&#x7B7E;&#x5FAE;&#x4FE1;&#x4E2D;&#x663E;&#x793A;&#xFF1A;Android&#x624B;&#x673A;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x64AD;&#x653E;&#xFF0C;iPhone6 &#x4E5F;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x64AD;&#x653E;&#xFF0C;&#x9650;&#x5236;:<code>data-src</code>&#x548C;<code>src</code> &#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x8BBF;&#x95EE;&#x89C6;&#x9891;&#x9875;&#x9762;&#x3002;</li>
+</ul>
+</li>
 </ol>
 
                     

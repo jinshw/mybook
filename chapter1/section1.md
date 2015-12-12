@@ -13,13 +13,14 @@
 |iphone4|320px|320/414=0.7729|(320/414)*10=7.729 px|||
 |ipad&Mini|768px|768/414=1.8551|(768/414)*10=18.551 px||...|
 |荣耀6 plus、红米2、小米2|360|360/414=0.8695652173913043||||
-|魅族4 pro|385|385/414=0.929951690821256||||
+|魅族4 pro|384|384/414=0.927536231884058||||
 |||||||
 
 1. 浏览器字体最小可以设置12px，在小于12px不起作用。
 2. 计算设备大小：$(window).width()
 
 ## 移动端浏览器匹配机型
+方案：使用js动态计算出设备的宽度，进而计算出html中的font-size大小,其他标签使用rem单位。
 1. iPhone6s、iPhone6 :测试完成 (OK)
 2. 视频格式mp4
 3. 双栏布局：float:left;
@@ -35,11 +36,22 @@
         background-repeat: no-repeat;
         background-size:5rem 5rem;'  >
         </section>
-5. 
-6. 
+5. 适配方案：使用js动态计算出设备的宽度，进而计算出html中的font-size大小（依照iPhone6 plus为基准，414px）    
+        var _cssText = document.querySelector("html").style.cssText;
+        document.querySelector("html").style.cssText = _cssText +"font-size:"+100*($(window).width())/414+"px !important";
+6. 注意：测试中出现**荣耀6plus** 使用UC浏览器预览，js不能修改**html**标签的font-size 大小，
+   解决：设置UC浏览器字体大小为**默认**
+7. 
 
 
 ## 微信端适配
+方案：使用`@media`适配移动端，例如下面适配iPhone6 plus，其他使用rem单位 
+
+    @media screen and (min-width: 414px) and (max-width: 767px) {
+        html{                                                    
+            font-size: 100px;                                    
+        }                                                        
+    }                                                            
 1. 微信中左右留白15px
 2. 
 

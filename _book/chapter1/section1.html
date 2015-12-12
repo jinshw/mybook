@@ -53,7 +53,7 @@
         data-chapter-title="第一节 HTML5 移动端适配"
         data-filepath="chapter1/section1.md"
         data-basepath=".."
-        data-revision="Fri Dec 11 2015 18:04:07 GMT+0800 (中国标准时间)"
+        data-revision="Sat Dec 12 2015 18:14:26 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -368,8 +368,8 @@
 </tr>
 <tr>
 <td>&#x9B45;&#x65CF;4 pro</td>
-<td style="text-align:center">385</td>
-<td style="text-align:right">385/414=0.929951690821256</td>
+<td style="text-align:center">384</td>
+<td style="text-align:right">384/414=0.927536231884058</td>
 <td style="text-align:right"></td>
 <td style="text-align:right"></td>
 <td style="text-align:right"></td>
@@ -388,6 +388,7 @@
 <li>&#x8BA1;&#x7B97;&#x8BBE;&#x5907;&#x5927;&#x5C0F;&#xFF1A;$(window).width()</li>
 </ol>
 <h2 id="&#x79FB;&#x52A8;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x5339;&#x914D;&#x673A;&#x578B;">&#x79FB;&#x52A8;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x5339;&#x914D;&#x673A;&#x578B;</h2>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x4F7F;&#x7528;js&#x52A8;&#x6001;&#x8BA1;&#x7B97;&#x51FA;&#x8BBE;&#x5907;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x8FDB;&#x800C;&#x8BA1;&#x7B97;&#x51FA;html&#x4E2D;&#x7684;font-size&#x5927;&#x5C0F;,&#x5176;&#x4ED6;&#x6807;&#x7B7E;&#x4F7F;&#x7528;rem&#x5355;&#x4F4D;&#x3002;</p>
 <ol>
 <li>iPhone6s&#x3001;iPhone6 :&#x6D4B;&#x8BD5;&#x5B8C;&#x6210; (OK)</li>
 <li>&#x89C6;&#x9891;&#x683C;&#x5F0F;mp4</li>
@@ -406,11 +407,21 @@
  background-size:5rem 5rem;&apos;  &gt;
  &lt;/section&gt;
 </code></pre></li>
-<li></li>
+<li>&#x9002;&#x914D;&#x65B9;&#x6848;&#xFF1A;&#x4F7F;&#x7528;js&#x52A8;&#x6001;&#x8BA1;&#x7B97;&#x51FA;&#x8BBE;&#x5907;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x8FDB;&#x800C;&#x8BA1;&#x7B97;&#x51FA;html&#x4E2D;&#x7684;font-size&#x5927;&#x5C0F;&#xFF08;&#x4F9D;&#x7167;iPhone6 plus&#x4E3A;&#x57FA;&#x51C6;&#xFF0C;414px&#xFF09;    <pre><code> var _cssText = document.querySelector(&quot;html&quot;).style.cssText;
+ document.querySelector(&quot;html&quot;).style.cssText = _cssText +&quot;font-size:&quot;+100*($(window).width())/414+&quot;px !important&quot;;
+</code></pre></li>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x6D4B;&#x8BD5;&#x4E2D;&#x51FA;&#x73B0;<strong>&#x8363;&#x8000;6plus</strong> &#x4F7F;&#x7528;UC&#x6D4F;&#x89C8;&#x5668;&#x9884;&#x89C8;&#xFF0C;js&#x4E0D;&#x80FD;&#x4FEE;&#x6539;<strong>html</strong>&#x6807;&#x7B7E;&#x7684;font-size &#x5927;&#x5C0F;&#xFF0C;
+&#x89E3;&#x51B3;&#xFF1A;&#x8BBE;&#x7F6E;UC&#x6D4F;&#x89C8;&#x5668;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E3A;<strong>&#x9ED8;&#x8BA4;</strong></li>
 <li></li>
 </ol>
 <h2 id="&#x5FAE;&#x4FE1;&#x7AEF;&#x9002;&#x914D;">&#x5FAE;&#x4FE1;&#x7AEF;&#x9002;&#x914D;</h2>
-<ol>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x4F7F;&#x7528;<code>@media</code>&#x9002;&#x914D;&#x79FB;&#x52A8;&#x7AEF;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x9002;&#x914D;iPhone6 plus&#xFF0C;&#x5176;&#x4ED6;&#x4F7F;&#x7528;rem&#x5355;&#x4F4D; </p>
+<pre><code>@media screen and (min-width: 414px) and (max-width: 767px) {
+    html{                                                    
+        font-size: 100px;                                    
+    }                                                        
+}                                                            
+</code></pre><ol>
 <li>&#x5FAE;&#x4FE1;&#x4E2D;&#x5DE6;&#x53F3;&#x7559;&#x767D;15px</li>
 <li></li>
 </ol>

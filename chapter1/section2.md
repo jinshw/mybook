@@ -30,6 +30,17 @@
 1. 在内联CSS中添加 `!important`
 2. 替换`.rich_media_content p` `img` `body` `html` 样式
 3. 在JS中用正则表达式替换字符串
+4. `.rich_media_content p` css替换：
+   
+        .rich_media_content p {
+            clear: both;
+            min-height: 1em;
+            white-space: normal;// 浏览器空白忽略(待定)
+        }  
+    
+5. 测试问题：
+    - `<video>`视频标签在微信中，Android手机刚进入时是视频位置显示是灰色，点击一下才可以播放。iPhone6 不显示视频。
+    - `<iframe>` 视频标签微信中显示：Android手机可以显示播放，iPhone6 也可以显示播放，限制:`data-src`和`src` 属性必须是可访问视频页面。
 
 
 
