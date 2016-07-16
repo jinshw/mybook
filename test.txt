@@ -1,7 +1,6 @@
 this is my test file
 
 test delete file
-
 zhe shi master modify m ne 
-
+zhe shi new branch sm ne
 
