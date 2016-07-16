@@ -1,4 +1,0 @@
-this is my test file
-
-test delete file
-
