@@ -21,7 +21,26 @@ function  cal(n){
 
 **第二种方法**
 
-
+```js
+function JumpFloor(n){
+if(n<0){
+	return 0
+}
+var fibArry = [0,1,2]
+if(n<3){
+  return fibArry[n]
+}
+var nReturn;
+var fibFirst=1,fibTow=2;
+for (var i = 3; i <= n; i++)             
+  {
+	  nReturn =fibFirst + fibTow;                 
+	  fibFirst=fibTow ;
+      fibTow = nReturn;
+  }            
+  return nReturn;
+}
+```
 
 
 
