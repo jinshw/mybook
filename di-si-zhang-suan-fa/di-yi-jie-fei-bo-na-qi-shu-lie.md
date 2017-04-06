@@ -205,7 +205,7 @@ function NumberOf1(n)
 }
 ```
 
-> n&
+> n&\(n-1\)妙用
 
 
 
