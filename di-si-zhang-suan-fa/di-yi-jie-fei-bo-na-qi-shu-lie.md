@@ -8,16 +8,20 @@
 
 ```js
 function  cal(n){
-	if(n<=0){
-		return -1;
-	}
-	if(n==1||n==2){
-		return n;
-	}else{
-		return cal(n-1)+cal(n-2);
-	}
+    if(n<=0){
+        return -1;
+    }
+    if(n==1||n==2){
+        return n;
+    }else{
+        return cal(n-1)+cal(n-2);
+    }
 }
 ```
+
+**第二种方法**
+
+
 
 
 
