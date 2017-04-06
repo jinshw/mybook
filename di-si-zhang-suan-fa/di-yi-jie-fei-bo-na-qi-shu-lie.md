@@ -130,7 +130,7 @@ public class Solution {
 
 **javascript实现**
 
-```
+```js
 function RectCover(n){
     if(n==0){
         return 0;
