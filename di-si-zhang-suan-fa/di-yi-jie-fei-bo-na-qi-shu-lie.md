@@ -149,7 +149,27 @@ function RectCover(n){
 }
 ```
 
-第二种
+第二种方式：循环
+
+```
+function rectCover(n)
+{
+    if(n==0||n==1||n==2){
+        return n;
+    }
+     
+    var nReturn;
+    var one = 1,two = 2;
+    for(var i=3;i<=n;i++){
+        nReturn = one + two;
+        one = two;
+        two = nReturn;
+    }
+    return nReturn;
+     
+     
+}
+```
 
 
 
