@@ -108,7 +108,7 @@ function JumpFloorII(n){
 2. f（2）=2
 3. f\(n\)=f\(n-1\)+f\(n-2\)
 
-java实现
+**java实现**
 
 ```java
 public class Solution {
@@ -128,5 +128,24 @@ public class Solution {
 }
 ```
 
-javascript
+**javascript实现**
+
+```
+function RectCover(n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    if(n==2){
+        return 2;
+    }
+
+    return RectCover(n-1)+RectCover(n-2);
+
+}
+```
+
+
 
