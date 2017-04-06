@@ -88,10 +88,7 @@ function JumpFloorII(n){
         return 0;
     if(n==1)
         return 1;
-    
     return 2*JumpFloorII(n-1);
-
-
 }
 ```
 
