@@ -13,7 +13,6 @@
   * [第二节](chapter3/section2.md)
 * [第四章 算法](di-si-zhang-suan-fa.md)
   * [第一节 斐波那契数列](di-si-zhang-suan-fa/di-yi-jie-fei-bo-na-qi-shu-lie.md)
-  * 
 * [结束](end/README.md)
 
 
