@@ -151,13 +151,13 @@ function RectCover(n){
 
 第二种方式：循环
 
-```
+```js
 function rectCover(n)
 {
     if(n==0||n==1||n==2){
         return n;
     }
-     
+
     var nReturn;
     var one = 1,two = 2;
     for(var i=3;i<=n;i++){
@@ -166,8 +166,6 @@ function rectCover(n)
         two = nReturn;
     }
     return nReturn;
-     
-     
 }
 ```
 
