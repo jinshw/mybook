@@ -63,6 +63,8 @@ f\(n\) = f\(n-1\)+f\(n-2\)+...+f\(n-\(n-1\)\) + f\(n-n\) =&gt; f\(0\) + f\(1\) +
 
 ![](https://segmentfault.com/img/bVp56n)
 
+java 
+
 ```java
 public class Solution {
     public int JumpFloorII(int target) {
@@ -77,24 +79,6 @@ public class Solution {
     }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
