@@ -130,7 +130,7 @@ public class Solution {
 
 **javascript实现**
 
-第一种
+第一种方式：递归
 
 ```js
 function RectCover(n){
@@ -148,6 +148,8 @@ function RectCover(n){
 
 }
 ```
+
+第二种
 
 
 
