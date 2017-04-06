@@ -216,8 +216,7 @@ function NumberOf1(n)
 >
 >    }
 >
-> 2. 
-> 3.
+> 2. 3.
 
 
 
